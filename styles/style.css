@@ -142,10 +142,18 @@ h1 {
 }
 
 .icon-size {
+  
   width: 25px;
   height: 25px;
 }
 
+
+#viewall{
+    font-size: 24px;
+   visibility: hidden;
+   color: red;
+   text-decoration: none;
+}
 /* footer start   */
 footer {
   margin: 0;
@@ -258,6 +266,8 @@ Responsiveness
      .blog-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .blog-aside {
     display: flex;
@@ -275,7 +285,15 @@ Responsiveness
     background-color: black;
 
   }
+  #viewall{
+    visibility: visible;
 }
+  #viewall:visited{
+    display: block;
+}
+#last-article{
+      display: none;
+  }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -310,6 +328,14 @@ Responsiveness
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #viewall{
+      visibility: visible;
+  }
+  #last-article{
+      display: none;
+  }
 }
 
 
+}
